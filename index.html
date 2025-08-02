@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo do Campus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>Mapa Interativo do Campus</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar sala ou bloco..." />
+                <button id="search-btn">🔍</button>
+            </div>
+        </header>
+
+        <div class="controls">
+            <div class="floor-selector">
+                <label for="floor-select">Andar:</label>
+                <select id="floor-select">
+                    <option value="terreo">Térreo</option>
+                    <option value="primeiro_andar">1º Andar</option>
+                    <option value="segundo_andar">2º Andar</option>
+                    <option value="terceiro_andar">3º Andar</option>
+                </select>
+            </div>
+            
+            <div class="zoom-controls">
+                <button id="zoom-in">+</button>
+                <button id="zoom-out">-</button>
+                <button id="fit-screen">📱</button>
+                <button id="reset-view">🏠</button>
+            </div>
+        </div>
+
+        <div class="map-container" id="map-container">
+            <div class="map-wrapper" id="map-wrapper">
+                <img id="floor-map" src="Capturadetela2025-08-02105042.png" alt="Planta do Campus" />
+                <div class="overlay" id="overlay"></div>
+            </div>
+        </div>
+
+        <div class="info-panel" id="info-panel">
+            <h3>Informações</h3>
+            <div id="info-content">
+                <p>Selecione um local no mapa ou use a busca para obter informações.</p>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h4>Legenda</h4>
+            <div class="legend-item">
+                <span class="legend-color bloco-a"></span>
+                <span>Bloco A</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color bloco-b"></span>
+                <span>Bloco B</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color bloco-c"></span>
+                <span>Bloco C</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color bloco-d"></span>
+                <span>Bloco D</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color bloco-e"></span>
+                <span>Bloco E</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

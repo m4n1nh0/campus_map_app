@@ -1,0 +1,124 @@
+{
+  "terreo": {
+    "bloco_a": [
+      "Biblioteca"
+    ],
+    "bloco_b": [
+      "B.04 - Sala de aula",
+      "Matrícula",
+      "Secretaria",
+      "SEP - Serviço Escola de Psicologia"
+    ],
+    "bloco_c": [
+      "C.08 - Sala de aula",
+      "C.09 - Consultório",
+      "C.10 - Sala de aula",
+      "C.12 - Consultório",
+      "C.13 - Sala de aula"
+    ],
+    "bloco_d": [
+      "D.17 - Sala de aula",
+      "D.19 - Lab. de Nutrição",
+      "NPJ - Núcleo de Prática Jurídica"
+    ],
+    "outros": [
+      "PCA ALIMENTAÇÃO",
+      "EDUCAR",
+      "ENTRADA",
+      "ESC. 1",
+      "ESC. 2",
+      "ESC. 3",
+      "ESC. 4",
+      "WC"
+    ]
+  },
+  "primeiro_andar": {
+    "bloco_a": [
+      "A.101 a A.105 - Sala de aula",
+      "A.104 - Sala da Sergipanidade",
+      "A.106 - LPG Laboratório Práticas de Gestão",
+      "Biblioteca",
+      "NAAP - Núcleo de Atendimento e Apoio Psicológico"
+    ],
+    "bloco_b": [
+      "B.110 a B.118 - Lab. de Informática"
+    ],
+    "bloco_c": [
+      "C.119 - Lab. de Arquitetura",
+      "C.121 - Lab. de Engenharia",
+      "C.122 a C.125 - Sala de aula"
+    ],
+    "bloco_d": [
+      "D.126 a D.128 - Lab. de Anatomia",
+      "D.130 - Lab. de Enfermagem",
+      "D.131 - Lab. de Enfermagem",
+      "D.132 - Sala de aula"
+    ],
+    "bloco_e": [
+      "E.133 a E.136 - Sala de aula"
+    ],
+    "outros": [
+      "ESC. 1",
+      "ESC. 2",
+      "ESC. 3",
+      "ESC. 4",
+      "WC"
+    ]
+  },
+  "segundo_andar": {
+    "bloco_a": [
+      "A.201 - Sala de aula",
+      "A.203 - Lab. de Veterinária",
+      "A.204 e A.205 - Sala de aula",
+      "A.206 - Lab. Multiquímica",
+      "A.208 - Lab. Análises Clínicas"
+    ],
+    "bloco_b": [
+      "B.209 e B.210 - Sala de aula",
+      "B.211 - Brinquedoteca",
+      "B.212 - Sala de aula"
+    ],
+    "bloco_c": [
+      "C.213 e C.214 - Sala de aula",
+      "C.216 a C.218 - Lab. de Eng.",
+      "C.219 - Sala de aula"
+    ],
+    "bloco_d": [
+      "D.220 e D.222 - Lab. Estética",
+      "D.223 a D.225 - Sala de aula",
+      "D.226 - Lab. Morfofuncional"
+    ],
+    "bloco_e": [
+      "E.227 - Sala de aula",
+      "E.228 - Lab. de Fisioterapia"
+    ],
+    "outros": [
+      "AUDITÓRIO",
+      "ESC. 1",
+      "ESC. 2",
+      "ESC. 3",
+      "ESC. 4",
+      "WC"
+    ]
+  },
+  "terceiro_andar": {
+    "bloco_a": [
+      "Coordenações",
+      "Salas dos Professores"
+    ],
+    "bloco_d": [
+      "D.310 - Sala de aula",
+      "D.311 - Sala de Convivência",
+      "D.313 a D.315 - Sala de aula"
+    ],
+    "bloco_e": [
+      "Reitoria"
+    ],
+    "outros": [
+      "ESC. 1",
+      "ESC. 3",
+      "WC"
+    ]
+  }
+}
+
