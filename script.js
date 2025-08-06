@@ -2,6 +2,7 @@ class CampusMap {
     constructor() {
         this.currentFloor = 'terreo';
         this.campusData = null;
+        this.navigationGraph = null;
         this.scale = 1;
         this.translateX = 0;
         this.translateY = 0;
@@ -23,6 +24,7 @@ class CampusMap {
     
     async init() {
         await this.loadCampusData();
+        await this.loadNavigationGraph();
         this.setupEventListeners();
         this.updateFloorDisplay();
     }
@@ -33,6 +35,15 @@ class CampusMap {
             this.campusData = await response.json();
         } catch (error) {
             console.error('Erro ao carregar dados do campus:', error);
+        }
+    }
+
+    async loadNavigationGraph() {
+        try {
+            const response = await fetch('navigation_graph.json');
+            this.navigationGraph = await response.json();
+        } catch (error) {
+            console.error('Erro ao carregar grafo de navegação:', error);
         }
     }
     
@@ -74,6 +85,13 @@ class CampusMap {
         mapContainer.addEventListener('touchstart', (e) => this.startTouch(e));
         mapContainer.addEventListener('touchmove', (e) => this.moveTouch(e));
         mapContainer.addEventListener('touchend', () => this.endTouch());
+
+        // Roteamento
+        const routeBtn = document.createElement('button');
+        routeBtn.textContent = 'Rota';
+        routeBtn.id = 'route-btn';
+        routeBtn.addEventListener('click', () => this.showRoutingInterface());
+        document.querySelector('.zoom-controls').appendChild(routeBtn);
     }
     
     updateFloorDisplay() {
@@ -233,7 +251,8 @@ class CampusMap {
                 'bloco_a': { x: 60, y: 20, width: 25, height: 30 },
                 'bloco_b': { x: 60, y: 55, width: 25, height: 25 },
                 'bloco_c': { x: 15, y: 55, width: 20, height: 35 },
-                'bloco_d': { x: 15, y: 20, width: 20, height: 30 }
+                'bloco_d': { x: 15, y: 20, width: 20, height: 30 },
+                'entrada': { x: 75, y: 40, width: 5, height: 10 }
             },
             'primeiro_andar': {
                 'bloco_a': { x: 60, y: 20, width: 25, height: 40 },
@@ -247,7 +266,8 @@ class CampusMap {
                 'bloco_b': { x: 60, y: 65, width: 25, height: 25 },
                 'bloco_c': { x: 15, y: 65, width: 20, height: 25 },
                 'bloco_d': { x: 15, y: 35, width: 20, height: 25 },
-                'bloco_e': { x: 15, y: 10, width: 20, height: 20 }
+                'bloco_e': { x: 15, y: 10, width: 20, height: 20 },
+                'auditorio': { x: 35, y: 60, width: 20, height: 30 }
             },
             'terceiro_andar': {
                 'bloco_a': { x: 60, y: 10, width: 25, height: 40 },
@@ -362,6 +382,145 @@ class CampusMap {
     endTouch() {
         this.isDragging = false;
     }
+
+    // Lógica de Roteamento
+    showRoutingInterface() {
+        const infoPanel = document.getElementById('info-panel');
+        const infoContent = document.getElementById('info-content');
+        
+        let routingHTML = `
+            <h4>Calcular Rota</h4>
+            <p>De:</p>
+            <select id="start-node-select"></select>
+            <p>Para:</p>
+            <select id="end-node-select"></select>
+            <button id="calculate-route-btn">Calcular Rota</button>
+            <div id="route-display"></div>
+        `;
+        infoContent.innerHTML = routingHTML;
+        infoPanel.classList.add('active');
+
+        this.populateNodeSelects();
+
+        document.getElementById('calculate-route-btn').addEventListener('click', () => this.calculateRoute());
+    }
+
+    populateNodeSelects() {
+        const startSelect = document.getElementById('start-node-select');
+        const endSelect = document.getElementById('end-node-select');
+        
+        startSelect.innerHTML = '';
+        endSelect.innerHTML = '';
+
+        if (!this.navigationGraph || !this.navigationGraph.nodes) return;
+
+        this.navigationGraph.nodes.forEach(node => {
+            const optionStart = document.createElement('option');
+            optionStart.value = node.id;
+            optionStart.textContent = `${node.name} (${this.getFloorNameByKey(node.floor)})`;
+            startSelect.appendChild(optionStart);
+
+            const optionEnd = document.createElement('option');
+            optionEnd.value = node.id;
+            optionEnd.textContent = `${node.name} (${this.getFloorNameByKey(node.floor)})`;
+            endSelect.appendChild(optionEnd);
+        });
+    }
+
+    calculateRoute() {
+        const startNodeId = document.getElementById('start-node-select').value;
+        const endNodeId = document.getElementById('end-node-select').value;
+        const routeDisplay = document.getElementById('route-display');
+
+        if (!startNodeId || !endNodeId) {
+            routeDisplay.innerHTML = '<p>Por favor, selecione os pontos de origem e destino.</p>';
+            return;
+        }
+
+        const path = this.bfs(startNodeId, endNodeId);
+
+        if (path.length > 0) {
+            let pathHTML = '<h5>Rota Encontrada:</h5><ol>';
+            path.forEach(nodeId => {
+                const node = this.navigationGraph.nodes.find(n => n.id === nodeId);
+                if (node) {
+                    pathHTML += `<li>${node.name} (${this.getFloorNameByKey(node.floor)})</li>`;
+                }
+            });
+            pathHTML += '</ol>';
+            routeDisplay.innerHTML = pathHTML;
+            this.highlightRoute(path);
+        } else {
+            routeDisplay.innerHTML = '<p>Não foi possível encontrar uma rota.</p>';
+            this.clearHighlights();
+        }
+    }
+
+    bfs(startNodeId, endNodeId) {
+        const graph = {};
+        this.navigationGraph.edges.forEach(edge => {
+            if (!graph[edge.source]) graph[edge.source] = [];
+            if (!graph[edge.target]) graph[edge.target] = [];
+            graph[edge.source].push(edge.target);
+            graph[edge.target].push(edge.source); // Assuming undirected graph
+        });
+
+        const queue = [[startNodeId]];
+        const visited = new Set();
+        visited.add(startNodeId);
+
+        while (queue.length > 0) {
+            const path = queue.shift();
+            const lastNode = path[path.length - 1];
+
+            if (lastNode === endNodeId) {
+                return path;
+            }
+
+            if (graph[lastNode]) {
+                for (const neighbor of graph[lastNode]) {
+                    if (!visited.has(neighbor)) {
+                        visited.add(neighbor);
+                        const newPath = [...path, neighbor];
+                        queue.push(newPath);
+                    }
+                }
+            }
+        }
+        return []; // No path found
+    }
+
+    highlightRoute(path) {
+        this.clearHighlights();
+        const overlay = document.getElementById('overlay');
+        const blockPositions = this.getBlockPositions();
+
+        path.forEach(nodeId => {
+            const node = this.navigationGraph.nodes.find(n => n.id === nodeId);
+            if (node) {
+                const floor = node.floor;
+                let blockKey = node.id.split('_')[1]; // Simple extraction, might need refinement
+                if (node.type === 'block') {
+                    blockKey = node.id.split('_')[1] + '_' + node.id.split('_')[2]; // e.g., bloco_a
+                } else if (node.type === 'stair') {
+                    blockKey = node.id.split('_')[1] + '_' + node.id.split('_')[2]; // e.g., esc_1
+                } else if (node.type === 'other') {
+                    blockKey = node.id.split('_')[1]; // e.g., entrada
+                }
+
+                const position = blockPositions[floor]?.[blockKey];
+                if (position) {
+                    const highlight = document.createElement('div');
+                    highlight.className = 'highlight';
+                    highlight.style.left = position.x + '%';
+                    highlight.style.top = position.y + '%';
+                    highlight.style.width = position.width + '%';
+                    highlight.style.height = position.height + '%';
+                    overlay.appendChild(highlight);
+                }
+            }
+        });
+    }
 }
 
 // Inicializar a aplicação quando a página carregar
@@ -369,4 +528,132 @@ let campusMap;
 document.addEventListener('DOMContentLoaded', () => {
     campusMap = new CampusMap();
 });
+
+
+
+    bfs(startNodeId, endNodeId) {
+        const queue = [startNodeId];
+        const visited = new Set();
+        const parent = {};
+
+        visited.add(startNodeId);
+
+        while (queue.length > 0) {
+            const currentNodeId = queue.shift();
+
+            if (currentNodeId === endNodeId) {
+                const path = [];
+                let curr = endNodeId;
+                while (curr !== undefined) {
+                    path.unshift(curr);
+                    curr = parent[curr];
+                }
+                return path;
+            }
+
+            const currentNode = this.navigationGraph.nodes.find(n => n.id === currentNodeId);
+            if (currentNode && currentNode.connections) {
+                currentNode.connections.forEach(neighborId => {
+                    if (!visited.has(neighborId)) {
+                        visited.add(neighborId);
+                        parent[neighborId] = currentNodeId;
+                        queue.push(neighborId);
+                    }
+                });
+            }
+        }
+        return []; // No path found
+    }
+
+    highlightRoute(path) {
+        this.clearHighlights();
+        const overlay = document.getElementById("overlay");
+
+        path.forEach(nodeId => {
+            const node = this.navigationGraph.nodes.find(n => n.id === nodeId);
+            if (node) {
+                const highlight = document.createElement("div");
+                highlight.className = "highlight-route";
+                // Usar as coordenadas do nó para posicionar o destaque
+                // Estes valores precisam ser ajustados para corresponder ao layout visual do mapa
+                highlight.style.left = `${node.x}%`;
+                highlight.style.top = `${node.y}%`;
+                highlight.style.width = "2%"; // Tamanho do destaque
+                highlight.style.height = "2%";
+                highlight.style.borderRadius = "50%"; // Para um ponto
+                highlight.style.backgroundColor = "red";
+                highlight.style.position = "absolute";
+                highlight.style.zIndex = "10";
+                overlay.appendChild(highlight);
+            }
+        });
+    }
+}
+
+const campusMap = new CampusMap();
+
+
+
+
+    bfs(startNodeId, endNodeId) {
+        const queue = [startNodeId];
+        const visited = new Set();
+        const parent = {};
+
+        visited.add(startNodeId);
+
+        while (queue.length > 0) {
+            const currentNodeId = queue.shift();
+
+            if (currentNodeId === endNodeId) {
+                const path = [];
+                let curr = endNodeId;
+                while (curr !== undefined) {
+                    path.unshift(curr);
+                    curr = parent[curr];
+                }
+                return path;
+            }
+
+            const currentNode = this.navigationGraph.nodes.find(n => n.id === currentNodeId);
+            if (currentNode && currentNode.connections) {
+                currentNode.connections.forEach(neighborId => {
+                    if (!visited.has(neighborId)) {
+                        visited.add(neighborId);
+                        parent[neighborId] = currentNodeId;
+                        queue.push(neighborId);
+                    }
+                });
+            }
+        }
+        return []; // No path found
+    }
+
+    highlightRoute(path) {
+        this.clearHighlights();
+        const overlay = document.getElementById("overlay");
+
+        path.forEach(nodeId => {
+            const node = this.navigationGraph.nodes.find(n => n.id === nodeId);
+            if (node) {
+                const highlight = document.createElement("div");
+                highlight.className = "highlight-route";
+                // Usar as coordenadas do nó para posicionar o destaque
+                // Estes valores precisam ser ajustados para corresponder ao layout visual do mapa
+                highlight.style.left = `${node.x}%`;
+                highlight.style.top = `${node.y}%`;
+                highlight.style.width = "2%"; // Tamanho do destaque
+                highlight.style.height = "2%";
+                highlight.style.borderRadius = "50%"; // Para um ponto
+                highlight.style.backgroundColor = "red";
+                highlight.style.position = "absolute";
+                highlight.style.zIndex = "10";
+                overlay.appendChild(highlight);
+            }
+        });
+    }
+}
+
+const campusMap = new CampusMap();
+
 

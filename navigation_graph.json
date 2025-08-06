@@ -1,0 +1,1143 @@
+{
+  "nodes": [
+    {
+      "id": "terreo_bloco_a",
+      "name": "BLOCO A",
+      "type": "block",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_biblioteca",
+      "name": "Biblioteca",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_bloco_b",
+      "name": "BLOCO B",
+      "type": "block",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_b04___sala_de_aula",
+      "name": "B.04 - Sala de aula",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_matr\u00edcula",
+      "name": "Matr\u00edcula",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_secretaria",
+      "name": "Secretaria",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_sep___servi\u00e7o_escola_de_psicologia",
+      "name": "SEP - Servi\u00e7o Escola de Psicologia",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_bloco_c",
+      "name": "BLOCO C",
+      "type": "block",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_c08___sala_de_aula",
+      "name": "C.08 - Sala de aula",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_c09___consult\u00f3rio",
+      "name": "C.09 - Consult\u00f3rio",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_c10___sala_de_aula",
+      "name": "C.10 - Sala de aula",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_c12___consult\u00f3rio",
+      "name": "C.12 - Consult\u00f3rio",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_c13___sala_de_aula",
+      "name": "C.13 - Sala de aula",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_bloco_d",
+      "name": "BLOCO D",
+      "type": "block",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_d17___sala_de_aula",
+      "name": "D.17 - Sala de aula",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_d19___lab_de_nutri\u00e7\u00e3o",
+      "name": "D.19 - Lab. de Nutri\u00e7\u00e3o",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_npj___n\u00facleo_de_pr\u00e1tica_jur\u00eddica",
+      "name": "NPJ - N\u00facleo de Pr\u00e1tica Jur\u00eddica",
+      "type": "room",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_pca_alimenta\u00e7\u00e3o",
+      "name": "PCA ALIMENTA\u00c7\u00c3O",
+      "type": "other",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_educar",
+      "name": "EDUCAR",
+      "type": "other",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_entrada",
+      "name": "ENTRADA",
+      "type": "other",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_esc_1",
+      "name": "ESC. 1",
+      "type": "other",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_esc_2",
+      "name": "ESC. 2",
+      "type": "other",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_esc_3",
+      "name": "ESC. 3",
+      "type": "other",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_esc_4",
+      "name": "ESC. 4",
+      "type": "other",
+      "floor": "terreo"
+    },
+    {
+      "id": "terreo_wc",
+      "name": "WC",
+      "type": "other",
+      "floor": "terreo"
+    },
+    {
+      "id": "primeiro_andar_bloco_a",
+      "name": "BLOCO A",
+      "type": "block",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_a101_a_a105___sala_de_aula",
+      "name": "A.101 a A.105 - Sala de aula",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_a104___sala_da_sergipanidade",
+      "name": "A.104 - Sala da Sergipanidade",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_a106___lpg_laborat\u00f3rio_pr\u00e1ticas_de_gest\u00e3o",
+      "name": "A.106 - LPG Laborat\u00f3rio Pr\u00e1ticas de Gest\u00e3o",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_biblioteca",
+      "name": "Biblioteca",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_naap___n\u00facleo_de_atendimento_e_apoio_psicol\u00f3gico",
+      "name": "NAAP - N\u00facleo de Atendimento e Apoio Psicol\u00f3gico",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_bloco_b",
+      "name": "BLOCO B",
+      "type": "block",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_b110_a_b118___lab_de_inform\u00e1tica",
+      "name": "B.110 a B.118 - Lab. de Inform\u00e1tica",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_bloco_c",
+      "name": "BLOCO C",
+      "type": "block",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_c119___lab_de_arquitetura",
+      "name": "C.119 - Lab. de Arquitetura",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_c121___lab_de_engenharia",
+      "name": "C.121 - Lab. de Engenharia",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_c122_a_c125___sala_de_aula",
+      "name": "C.122 a C.125 - Sala de aula",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_bloco_d",
+      "name": "BLOCO D",
+      "type": "block",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_d126_a_d128___lab_de_anatomia",
+      "name": "D.126 a D.128 - Lab. de Anatomia",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_d130___lab_de_enfermagem",
+      "name": "D.130 - Lab. de Enfermagem",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_d131___lab_de_enfermagem",
+      "name": "D.131 - Lab. de Enfermagem",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_d132___sala_de_aula",
+      "name": "D.132 - Sala de aula",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_bloco_e",
+      "name": "BLOCO E",
+      "type": "block",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_e133_a_e136___sala_de_aula",
+      "name": "E.133 a E.136 - Sala de aula",
+      "type": "room",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_esc_1",
+      "name": "ESC. 1",
+      "type": "other",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_esc_2",
+      "name": "ESC. 2",
+      "type": "other",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_esc_3",
+      "name": "ESC. 3",
+      "type": "other",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_esc_4",
+      "name": "ESC. 4",
+      "type": "other",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "primeiro_andar_wc",
+      "name": "WC",
+      "type": "other",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "segundo_andar_bloco_a",
+      "name": "BLOCO A",
+      "type": "block",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_a201___sala_de_aula",
+      "name": "A.201 - Sala de aula",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_a203___lab_de_veterin\u00e1ria",
+      "name": "A.203 - Lab. de Veterin\u00e1ria",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_a204_e_a205___sala_de_aula",
+      "name": "A.204 e A.205 - Sala de aula",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_a206___lab_multiqu\u00edmica",
+      "name": "A.206 - Lab. Multiqu\u00edmica",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_a208___lab_an\u00e1lises_cl\u00ednicas",
+      "name": "A.208 - Lab. An\u00e1lises Cl\u00ednicas",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_bloco_b",
+      "name": "BLOCO B",
+      "type": "block",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_b209_e_b210___sala_de_aula",
+      "name": "B.209 e B.210 - Sala de aula",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_b211___brinquedoteca",
+      "name": "B.211 - Brinquedoteca",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_b212___sala_de_aula",
+      "name": "B.212 - Sala de aula",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_bloco_c",
+      "name": "BLOCO C",
+      "type": "block",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_c213_e_c214___sala_de_aula",
+      "name": "C.213 e C.214 - Sala de aula",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_c216_a_c218___lab_de_eng",
+      "name": "C.216 a C.218 - Lab. de Eng.",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_c219___sala_de_aula",
+      "name": "C.219 - Sala de aula",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_bloco_d",
+      "name": "BLOCO D",
+      "type": "block",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_d220_e_d222___lab_est\u00e9tica",
+      "name": "D.220 e D.222 - Lab. Est\u00e9tica",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_d223_a_d225___sala_de_aula",
+      "name": "D.223 a D.225 - Sala de aula",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_d226___lab_morfofuncional",
+      "name": "D.226 - Lab. Morfofuncional",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_bloco_e",
+      "name": "BLOCO E",
+      "type": "block",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_e227___sala_de_aula",
+      "name": "E.227 - Sala de aula",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_e228___lab_de_fisioterapia",
+      "name": "E.228 - Lab. de Fisioterapia",
+      "type": "room",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_audit\u00f3rio",
+      "name": "AUDIT\u00d3RIO",
+      "type": "other",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_esc_1",
+      "name": "ESC. 1",
+      "type": "other",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_esc_2",
+      "name": "ESC. 2",
+      "type": "other",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_esc_3",
+      "name": "ESC. 3",
+      "type": "other",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_esc_4",
+      "name": "ESC. 4",
+      "type": "other",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "segundo_andar_wc",
+      "name": "WC",
+      "type": "other",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "terceiro_andar_bloco_a",
+      "name": "BLOCO A",
+      "type": "block",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_coordena\u00e7\u00f5es",
+      "name": "Coordena\u00e7\u00f5es",
+      "type": "room",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_salas_dos_professores",
+      "name": "Salas dos Professores",
+      "type": "room",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_bloco_d",
+      "name": "BLOCO D",
+      "type": "block",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_d310___sala_de_aula",
+      "name": "D.310 - Sala de aula",
+      "type": "room",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_d311___sala_de_conviv\u00eancia",
+      "name": "D.311 - Sala de Conviv\u00eancia",
+      "type": "room",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_d313_a_d315___sala_de_aula",
+      "name": "D.313 a D.315 - Sala de aula",
+      "type": "room",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_bloco_e",
+      "name": "BLOCO E",
+      "type": "block",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_reitoria",
+      "name": "Reitoria",
+      "type": "room",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_esc_1",
+      "name": "ESC. 1",
+      "type": "other",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_esc_3",
+      "name": "ESC. 3",
+      "type": "other",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terceiro_andar_wc",
+      "name": "WC",
+      "type": "other",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terreo_esc._1",
+      "name": "ESC. 1",
+      "type": "stair",
+      "floor": "terreo"
+    },
+    {
+      "id": "primeiro_andar_esc._1",
+      "name": "ESC. 1",
+      "type": "stair",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "segundo_andar_esc._1",
+      "name": "ESC. 1",
+      "type": "stair",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "terceiro_andar_esc._1",
+      "name": "ESC. 1",
+      "type": "stair",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terreo_esc._2",
+      "name": "ESC. 2",
+      "type": "stair",
+      "floor": "terreo"
+    },
+    {
+      "id": "primeiro_andar_esc._2",
+      "name": "ESC. 2",
+      "type": "stair",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "segundo_andar_esc._2",
+      "name": "ESC. 2",
+      "type": "stair",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "terreo_esc._3",
+      "name": "ESC. 3",
+      "type": "stair",
+      "floor": "terreo"
+    },
+    {
+      "id": "primeiro_andar_esc._3",
+      "name": "ESC. 3",
+      "type": "stair",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "segundo_andar_esc._3",
+      "name": "ESC. 3",
+      "type": "stair",
+      "floor": "segundo_andar"
+    },
+    {
+      "id": "terceiro_andar_esc._3",
+      "name": "ESC. 3",
+      "type": "stair",
+      "floor": "terceiro_andar"
+    },
+    {
+      "id": "terreo_esc._4",
+      "name": "ESC. 4",
+      "type": "stair",
+      "floor": "terreo"
+    },
+    {
+      "id": "primeiro_andar_esc._4",
+      "name": "ESC. 4",
+      "type": "stair",
+      "floor": "primeiro_andar"
+    },
+    {
+      "id": "segundo_andar_esc._4",
+      "name": "ESC. 4",
+      "type": "stair",
+      "floor": "segundo_andar"
+    }
+  ],
+  "edges": [
+    {
+      "source": "terreo_bloco_a",
+      "target": "terreo_biblioteca",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_b",
+      "target": "terreo_b04___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_b",
+      "target": "terreo_matr\u00edcula",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_b",
+      "target": "terreo_secretaria",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_b",
+      "target": "terreo_sep___servi\u00e7o_escola_de_psicologia",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_c",
+      "target": "terreo_c08___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_c",
+      "target": "terreo_c09___consult\u00f3rio",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_c",
+      "target": "terreo_c10___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_c",
+      "target": "terreo_c12___consult\u00f3rio",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_c",
+      "target": "terreo_c13___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_d",
+      "target": "terreo_d17___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_d",
+      "target": "terreo_d19___lab_de_nutri\u00e7\u00e3o",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_d",
+      "target": "terreo_npj___n\u00facleo_de_pr\u00e1tica_jur\u00eddica",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_a101_a_a105___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_a104___sala_da_sergipanidade",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_a106___lpg_laborat\u00f3rio_pr\u00e1ticas_de_gest\u00e3o",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_biblioteca",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_naap___n\u00facleo_de_atendimento_e_apoio_psicol\u00f3gico",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_b",
+      "target": "primeiro_andar_b110_a_b118___lab_de_inform\u00e1tica",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_c",
+      "target": "primeiro_andar_c119___lab_de_arquitetura",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_c",
+      "target": "primeiro_andar_c121___lab_de_engenharia",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_c",
+      "target": "primeiro_andar_c122_a_c125___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_d",
+      "target": "primeiro_andar_d126_a_d128___lab_de_anatomia",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_d",
+      "target": "primeiro_andar_d130___lab_de_enfermagem",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_d",
+      "target": "primeiro_andar_d131___lab_de_enfermagem",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_d",
+      "target": "primeiro_andar_d132___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_e",
+      "target": "primeiro_andar_e133_a_e136___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_a201___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_a203___lab_de_veterin\u00e1ria",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_a204_e_a205___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_a206___lab_multiqu\u00edmica",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_a208___lab_an\u00e1lises_cl\u00ednicas",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_b",
+      "target": "segundo_andar_b209_e_b210___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_b",
+      "target": "segundo_andar_b211___brinquedoteca",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_b",
+      "target": "segundo_andar_b212___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_c",
+      "target": "segundo_andar_c213_e_c214___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_c",
+      "target": "segundo_andar_c216_a_c218___lab_de_eng",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_c",
+      "target": "segundo_andar_c219___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_d",
+      "target": "segundo_andar_d220_e_d222___lab_est\u00e9tica",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_d",
+      "target": "segundo_andar_d223_a_d225___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_d",
+      "target": "segundo_andar_d226___lab_morfofuncional",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_e",
+      "target": "segundo_andar_e227___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_e",
+      "target": "segundo_andar_e228___lab_de_fisioterapia",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_a",
+      "target": "terceiro_andar_coordena\u00e7\u00f5es",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_a",
+      "target": "terceiro_andar_salas_dos_professores",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_d",
+      "target": "terceiro_andar_d310___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_d",
+      "target": "terceiro_andar_d311___sala_de_conviv\u00eancia",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_d",
+      "target": "terceiro_andar_d313_a_d315___sala_de_aula",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_e",
+      "target": "terceiro_andar_reitoria",
+      "weight": 1
+    },
+    {
+      "source": "terreo_esc._1",
+      "target": "primeiro_andar_esc._1",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_esc._1",
+      "target": "segundo_andar_esc._1",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_esc._1",
+      "target": "terceiro_andar_esc._1",
+      "weight": 1
+    },
+    {
+      "source": "terreo_esc._2",
+      "target": "primeiro_andar_esc._2",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_esc._2",
+      "target": "segundo_andar_esc._2",
+      "weight": 1
+    },
+    {
+      "source": "terreo_esc._3",
+      "target": "primeiro_andar_esc._3",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_esc._3",
+      "target": "segundo_andar_esc._3",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_esc._3",
+      "target": "terceiro_andar_esc._3",
+      "weight": 1
+    },
+    {
+      "source": "terreo_esc._4",
+      "target": "primeiro_andar_esc._4",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_esc._4",
+      "target": "segundo_andar_esc._4",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_a",
+      "target": "terreo_bloco_b",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_a",
+      "target": "terreo_bloco_c",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_a",
+      "target": "terreo_bloco_d",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_a",
+      "target": "terreo_esc_1",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_a",
+      "target": "terreo_esc_2",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_a",
+      "target": "terreo_esc_3",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_a",
+      "target": "terreo_esc_4",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_a",
+      "target": "terreo_entrada",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_b",
+      "target": "terreo_esc_2",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_c",
+      "target": "terreo_bloco_d",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_c",
+      "target": "terreo_esc_4",
+      "weight": 1
+    },
+    {
+      "source": "terreo_bloco_d",
+      "target": "terreo_esc_3",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_bloco_b",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_bloco_c",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_bloco_d",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_bloco_e",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_esc_1",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_esc_2",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_esc_3",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_a",
+      "target": "primeiro_andar_esc_4",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_b",
+      "target": "primeiro_andar_esc_2",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_c",
+      "target": "primeiro_andar_bloco_d",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_c",
+      "target": "primeiro_andar_esc_4",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_d",
+      "target": "primeiro_andar_bloco_e",
+      "weight": 1
+    },
+    {
+      "source": "primeiro_andar_bloco_d",
+      "target": "primeiro_andar_esc_3",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_bloco_b",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_bloco_c",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_bloco_d",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_bloco_e",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_audit\u00f3rio",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_esc_1",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_esc_2",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_esc_3",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_a",
+      "target": "segundo_andar_esc_4",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_b",
+      "target": "segundo_andar_audit\u00f3rio",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_b",
+      "target": "segundo_andar_esc_2",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_c",
+      "target": "segundo_andar_bloco_d",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_c",
+      "target": "segundo_andar_esc_4",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_d",
+      "target": "segundo_andar_bloco_e",
+      "weight": 1
+    },
+    {
+      "source": "segundo_andar_bloco_d",
+      "target": "segundo_andar_esc_3",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_a",
+      "target": "terceiro_andar_bloco_d",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_a",
+      "target": "terceiro_andar_bloco_e",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_a",
+      "target": "terceiro_andar_esc_1",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_a",
+      "target": "terceiro_andar_esc_3",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_d",
+      "target": "terceiro_andar_bloco_e",
+      "weight": 1
+    },
+    {
+      "source": "terceiro_andar_bloco_d",
+      "target": "terceiro_andar_esc_3",
+      "weight": 1
+    }
+  ]
+}
