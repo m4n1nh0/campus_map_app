@@ -591,7 +591,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const campusMap = new CampusMap();
+    window.campusMap = new CampusMap();
 });
 
 
@@ -657,7 +657,7 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const campusMap = new CampusMap();
+    window.campusMap = new CampusMap();
 });
 
 
