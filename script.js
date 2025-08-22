@@ -590,7 +590,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 }
 
-const campusMap = new CampusMap();
+window.campusMap = new CampusMap();
 
 
 
@@ -654,6 +654,6 @@ const campusMap = new CampusMap();
     }
 }
 
-const campusMap = new CampusMap();
+window.campusMap = new CampusMap();
 
 
